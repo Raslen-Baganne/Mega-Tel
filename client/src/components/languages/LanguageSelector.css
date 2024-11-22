@@ -1,0 +1,43 @@
+/* LanguageSelector.css */
+
+.custom-language-selector {
+  display: inline-block;
+  margin-right: 12px; /* Adjust as needed to match the spacing of navbar items */
+}
+
+.custom-language-selector select {
+  padding: 8px 12px;
+  border: 2px solid transparent; /* Set initial border to transparent */
+  border-radius: 5px;
+  background-color: transparent;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 19l-7-7h14l-7 7zm0-14.25L18.25 10H5.75L12 4.75z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right center;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  appearance: none; /* Remove default appearance */
+  transition: border-color 0.3s, color 0.5s; /* Transition for border and color */
+}
+
+.custom-language-selector select:hover {
+  border-color: #e78a00; /* Border color on hover */
+  outline: none;
+}
+
+.custom-language-selector select:focus {
+  outline: none;
+  color: #e78a00;
+}
+
+/* Style the selected option */
+.custom-language-selector select option:checked {
+  background-color: #fff; /* Set background color to white */
+  color: #333; /* Set text color to match the default text color */
+}
+
+.custom-language-selector select option[disabled]:first-child {
+  color: white; /* Placeholder text color */
+}
+
+/* You can add more styles as needed */

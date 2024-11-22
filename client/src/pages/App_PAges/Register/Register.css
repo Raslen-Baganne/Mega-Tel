@@ -1,0 +1,124 @@
+.costum-wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid white;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+  color: rgba(43, 43, 43, 0.8);
+  border-radius: 10px;
+  padding: 50px 40px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  /* Add smooth transition to all properties */
+  backdrop-filter: blur(30px);
+}
+
+.costum-wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: auto;
+}
+
+.costum-input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 40px 0;
+}
+
+.costum-input-box input::placeholder {
+  color: #fff;
+}
+
+.costum-input-box .costum-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  transition: color 0.3s ease;
+  /* Add smooth transition to icon color */
+}
+
+.costum-input-box input:focus,
+.costum-input-box input:hover {
+  border-color: #e78a00;
+  box-shadow: 0 0 5px #333;
+}
+
+.costum-input-box input:focus+.icon,
+.costum-input-box input:hover+.icon {
+  color: #e78a00;
+}
+
+.costum-input-box input {
+  width: calc(100% - 45px);
+  height: 45%;
+  background: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 20px 20px 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  /* Add smooth transitions to input */
+}
+
+.costum-input-box input::placeholder {
+  color: #ffffff;
+}
+
+.costum-input-box .costum-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-20%);
+  font-size: 18px;
+  transition: color 0.3s ease;
+  color: #ffffff;
+  /* Add smooth transition to icon color */
+}
+
+.costum-input-box input:focus,
+.costum-input-box input:hover {
+  border-color: #e78a00;
+  box-shadow: 0 0 5px#e78a00;
+  ;
+}
+
+
+.costum-input-box input:focus+.costum-icon,
+.costum-input-box input:hover+.costum-icon {
+  color: #e78a00;
+}
+
+.costum-wrapper.costum-login-button {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Add smooth transition to button background color and text color */
+}
+
+.costum-wrapper.costum-login-button:hover {
+  background-color: #eee;
+  color: #e78a00;
+}
+
+.costum-input-box input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}

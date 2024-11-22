@@ -1,0 +1,75 @@
+.custom-contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.custom-bg {
+  background-image: url('../../../Assets/images/OIG1.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat ;
+  background-attachment: fixed;
+  background-color: white;
+  height: 100%;
+}
+
+.custom-ovrlay {
+  position: relative;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.65); /* Dark background with 50% opacity */
+  z-index: 2; /* Overlay above the background image */
+}
+
+.custom-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  background-color: white;
+  width: 100vw;
+}
+
+.custom-text {
+  text-align: center;
+  color: #FF6A3D;
+  margin-bottom: 20px;
+  font-size: 1.4em; /* Example font size increase */
+}
+
+.custom-map-address-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  padding-top: 30px;
+  background-color: #1A2238;
+}
+
+.custom-address-container {
+  color: white;
+  font-size: 1.5em; /* Example font size increase */
+  margin: 20px;
+}
+
+.custom-address-container:hover {
+  color: #FF6A3D; /* Example text color change on hover */
+}
+
+.custom-map-container {
+  height: 500px;
+}
+
+.custom-text-part2 h4 {
+  max-width: 80vw;
+  color: #FF6A3D;
+}
+
+.custom-text-part1 {
+  color: #FF6A3D;
+}

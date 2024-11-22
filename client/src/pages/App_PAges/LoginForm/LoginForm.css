@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+.costum-login-body {
+  margin-bottom: 100vh; /* Adjust the value based on the height of your footer */
+}
+
+
+.costum-login-body::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url('../../../Assets/images/bg3.jpg');
+
+   background-size: 100%;
+   
+   
+   
+ }
+ 
+.costum-wrapper {
+   width: 420px;
+   background: transparent;
+   border: 2px solid white;
+   backdrop-filter: blur(2px);
+   box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+   color: rgba(43, 43, 43, 0.8);
+   border-radius: 10px;
+   padding: 30px 40px;
+   margin: auto;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   transition: all 0.3s ease; /* Add smooth transition to all properties */
+   backdrop-filter: blur(30px);
+ }
+ 
+ .costum-wrapper h1 {
+   font-size: 36px;
+   text-align: center;
+  color: rgba(255,255, 255, 0.5);
+   
+ }
+ 
+ .costum-input-box {
+   position: relative;
+   width: 100%;
+   height: 50px;
+   margin: 30px 0;
+ }
+ 
+ .costum-input-box input {
+   width: calc(100% - 45px);
+   height: 45%;
+   background: transparent;
+   outline: none;
+   border: 2px solid rgba(255, 255, 255, .2);
+   border-radius: 40px;
+   font-size: 16px;
+   color: #fff;
+   padding: 20px 20px 20px 20px;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease; /* Add smooth transitions to input */
+ }
+ 
+ .costum-input-box input::placeholder {
+   color: #fff;
+ }
+ 
+ .costum-input-box .costum-icon {
+   position: absolute;
+   right: 20px;
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 18px;
+   color: #fff;
+   transition: color 0.3s ease; /* Add smooth transition to icon color */
+ }
+ 
+ .costum-input-box input:focus,
+ .costum-input-box input:hover {
+   border-color: #e78a00;
+   box-shadow: 0 0 5px #e78a00;;
+ }
+ 
+ .costum-input-box input:focus + .costum-icon,
+ .costum-input-box input:hover + .costum-icon {
+   color: #e78a00;
+ }
+ 
+ .costum-remember-forgot {
+   display: flex;
+   justify-content: space-between;
+   font-size: 14.5px;
+   margin: -15px 0 15px;
+   transition: color 0.3s ease, margin 0.3s ease; /* Add smooth transition to text color and margin */
+ }
+ 
+ .costum-remember-forgot label input {
+   color: #fff;
+   margin-right: 4px;
+ }
+ 
+ .costum-remember-forgot a {
+   color: #fff;
+   text-decoration: none;
+ }
+ 
+ .costum-remember-forgot a:hover {
+   text-decoration: underline;
+ }
+ 
+ .costum-login-button {
+   width: 100%;
+   height: 45px;
+   background: #fff;
+   border: none;
+   outline: none;
+   border-radius: 40px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+   cursor: pointer;
+   font-size: 16px;
+   color: #333;
+   font-weight: 700;
+   transition: background-color 0.3s ease, color 0.3s ease; /* Add smooth transition to button background color and text color */
+ }
+ 
+ .costum-login-button:hover {
+   background-color: #eee;
+   color: #e78a00;
+ }
+ 
+ .costum-register-link {
+   font-size: 14.5px;
+   text-align: center;
+   margin: 20px 0 15px;
+   transition: margin 0.3s ease; /* Add smooth transition to margin */
+ }
+ 
+ .costum-register-link p a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600;
+ }
+ 
+ .costum-register-link p a:hover {
+   text-decoration: underline;
+ }
+
+
+
+ .costum-login-container {
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.costum-login-container.slide-in {
+  transform: translateX(0);
+}

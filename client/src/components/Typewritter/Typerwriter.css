@@ -1,0 +1,31 @@
+/* Typerwriter.css */
+
+.custom-text-animation {
+  font-size: 100px;
+  font-weight: bold;
+  position: relative;
+  color: #FF6A3D;
+  padding-top: 400px;
+  text-align: center;
+}
+
+.custom-text-animation span {
+  display: inline-block;
+}
+
+.custom-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 80px;
+  background-color: white;
+  animation: custom-blink 0.8s infinite;
+}
+
+@keyframes custom-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

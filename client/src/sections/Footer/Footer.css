@@ -1,0 +1,91 @@
+.costum-footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100vw; /* Use viewport width to ensure it spans the entire width */
+  background-color: #1D2228;
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  color: white;
+  box-sizing: border-box;
+  flex-shrink: 1;
+  margin-top: 0; 
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+
+
+
+.costum-grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+.costum-widget-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.costum-footer.costum-widget {
+  margin-bottom: 10px;
+  width: auto;
+}
+.costum-footer .costum-widget:hover {
+  
+  color: #e78a00;
+}
+.costum-containerFootr {
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100px; /* Adjust the height of the container as needed */
+}
+
+.costum-pa {
+  border-top: #e78a00 2px solid;
+  padding-top: 10px; /* Add padding-top to adjust the space between the border and the text */
+}
+
+.costum-icon-container {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.4s ease;
+  }
+  
+  .costum-icon-container:hover {
+    color: #24262b;
+    background-color: #e78a00;
+  }  
+.costum-section h4{
+  
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  
+}
+.costum-section h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e78a00;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
